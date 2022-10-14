@@ -13,7 +13,7 @@ using namespace std;
 string runLength(string S)
 {
 	string ending = "";
-	string num;
+	string numAsString;
 
 	for (int i = 0; i < S.length(); i++)
 	{
@@ -27,15 +27,15 @@ string runLength(string S)
 		//get rid of the 1 if applicable
 			if (count > 1)
 			{
-				 num = to_string(count);
+				numAsString = to_string(count);
 			}
 			else
 			{
-				num = "";
+				numAsString = "";
 			}
 
 		//string concatenation
-		string tmp = num + S[i];
+		string tmp = numAsString + S[i];
 		ending += tmp;
 	}
 	return ending;
