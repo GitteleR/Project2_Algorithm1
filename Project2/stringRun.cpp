@@ -10,7 +10,7 @@ using namespace std;
 
 
 
-string numbString(string testing)
+string runLength(string testing)
 {
 	string ending = "";
 	string num;
@@ -49,7 +49,7 @@ int main()
 	//User input
 	cout << "Please enter the word you would like to shorten: ";
 	getline(cin, wordToShorten);
-	cout << numbString(wordToShorten);
+	cout << runLength(wordToShorten);
 	cout << "\n";
 
 
@@ -60,9 +60,9 @@ int main()
 
 
 	cout << "\n" << "Project 2 - Algorithm 1 resulting encoding below" << endl;
-	cout << numbString(test1) << endl;
-	cout << numbString(test2) << endl;
-	cout << numbString(test3) << endl;
+	cout << runLength(test1) << endl;
+	cout << runLength(test2) << endl;
+	cout << runLength(test3) << endl;
 
 
 
