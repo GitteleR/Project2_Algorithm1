@@ -10,15 +10,15 @@ using namespace std;
 
 
 
-string runLength(string testing)
+string runLength(string S)
 {
 	string ending = "";
 	string num;
 
-	for (int i = 0; i < testing.length(); i++)
+	for (int i = 0; i < S.length(); i++)
 	{
 		int count = 1;
-		while (i < testing.length() - 1 && testing[i] == testing[i + 1])
+		while (i < S.length() - 1 && S[i] == S[i + 1])
 		{
 			count++;
 			i++;
@@ -35,7 +35,7 @@ string runLength(string testing)
 			}
 
 		//string concatenation
-		string tmp = num + testing[i];
+		string tmp = num + S[i];
 		ending += tmp;
 	}
 	return ending;
@@ -44,12 +44,12 @@ string runLength(string testing)
 
 int main()
 {
-	string wordToShorten;
+	string inputString;
 
 	//User input
 	cout << "Please enter the word you would like to shorten: ";
-	getline(cin, wordToShorten);
-	cout << runLength(wordToShorten);
+	getline(cin, inputString);
+	cout << runLength(inputString);
 	cout << "\n";
 
 
